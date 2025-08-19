@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CEUB Task Manager</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CEUB Task Manager</h1>
+            <p>Organize seus trabalhos e provas</p>
+        </header>
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Ex: Prova de Cálculo I" required>
+            <input type="date" id="task-date" required>
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+        <div id="task-list">
+            </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
