@@ -2,24 +2,36 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>CEUB Task Manager</title>
+    <title>Task Manager</title>
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>CEUB Task Manager</h1>
+            <h1>Task Manager</h1>
             <p>Organize seus trabalhos e provas</p>
         </header>
+
         <form id="task-form">
             <input type="text" id="task-title" placeholder="Ex: Prova de Cálculo I" required>
-            <input type="date" id="task-date" required>
+
+            <div class="date-time-wrapper">
+                <input type="date" id="task-date" required>
+                <input type="time" id="task-time">
+            </div>
+
+            <div class="options-wrapper">
+                <input type="checkbox" id="save-to-calendar">
+                <label for="save-to-calendar">Salvar no Google Agenda</label>
+            </div>
+
             <button type="submit">Adicionar Tarefa</button>
         </form>
+
         <div id="task-list">
             </div>
     </div>
+
     <script src="popup.js"></script>
 </body>
 </html>
-

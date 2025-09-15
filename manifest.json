@@ -1,29 +1,34 @@
 {
-    "manifest_version": 3,
-    "name": "CEUB Task Manager",
-    "version": "1.1.0",
-    "description": "Uma extensão para organizar trabalhos e provas do CEUB com ajuda de IA.",
-    "icons": {
-      "16": "icons/icon16.png",
-      "32": "icons/icon32.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    },
-    "action": {
-      "default_title": "CEUB Task Manager",
-      "default_popup": "src/popup/popup.html"
-    },
-    "background": {
-      "service_worker": "src/background/service-worker.js"
-    },
-    "permissions": [
-      "storage",
-      "alarms",
-      "notifications"
-    ],
-     "host_permissions": [
+  "manifest_version": 3,
+  "name": "Task Manager",
+  "version": "2.0.0",
+  "description": "Uma extensão para organizar tarefas e salvá-las no Google Agenda.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Task Manager",
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "identity" 
+  ],
+  "host_permissions": [
     "https://generativelanguage.googleapis.com/"
-  ]
-
-
+  ],
+  "oauth2": {
+    "client_id": "369673193518-mu638lhu8lutpp6k2kf5aieigae9qt13.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar.events"
+    ]
+  }
 }
