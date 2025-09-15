@@ -136,3 +136,25 @@ button[type="submit"]:hover {
     color: #555;
     white-space: pre-wrap; /* Mantém a formatação da resposta da IA */
 }
+.date-time-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+#task-date {
+    flex-grow: 1;
+}
+
+.options-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
+    padding: 5px 0;
+}
+
+#save-to-calendar {
+    /* Melhora o alinhamento do checkbox */
+    transform: translateY(-1px);
+}
