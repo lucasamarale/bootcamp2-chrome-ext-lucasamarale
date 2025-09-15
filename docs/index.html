@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Extensão para Chrome</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
+        header { background-color: #2c3e50; color: white; text-align: center; padding: 2rem 1rem; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin: 0.5rem 0 0; font-size: 1.2rem; opacity: 0.9; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        .section { background-color: white; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #3498db; padding-bottom: 0.5rem; color: #2c3e50; }
+        ul { list-style: '✓ '; padding-left: 1.5rem; }
+        .button { display: inline-block; background-color: #3498db; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.2s; }
+        .button:hover { background-color: #2980b9; }
+        footer { text-align: center; padding: 1rem; font-size: 0.9rem; color: #777; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+        <p>Sua extensão definitiva para gerenciar tarefas e prazos.</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>O que é o Task Manager?</h2>
+            <p>O Task Manager é uma extensão para Google Chrome criada para ajudar estudantes e profissionais a organizar suas entregas de trabalhos e provas. Com uma interface simples, você nunca mais perderá um prazo importante.</p>
+        </div>
+
+        <div class="section">
+            <h2>✨ Funcionalidades</h2>
+            <ul>
+                <li><strong>Checklist Inteligente:</strong> Adicione, visualize e remova tarefas com data e hora.</li>
+                <li><strong>Sugestões com IA:</strong> Receba planos de ação e dicas de estudo para suas tarefas com a ajuda da IA do Google (Gemini).</li>
+                <li><strong>Integração com Google Agenda:</strong> Salve suas tarefas diretamente no seu Google Agenda com um único clique.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Instalação</h2>
+            <p>Siga os passos para instalar a extensão em modo de desenvolvedor:</p>
+            <ol>
+                <li>Faça o download da versão mais recente clicando no botão abaixo.</li>
+                <li>Descompacte o arquivo <strong>.zip</strong> em uma pasta no seu computador.</li>
+                <li>Abra o Google Chrome e navegue para <code>chrome://extensions</code>.</li>
+                <li>Ative o <strong>Modo de desenvolvedor</strong> no canto superior direito.</li>
+                <li>Clique em <strong>"Carregar sem compactação"</strong> e selecione a pasta que você descompactou.</li>
+            </ol>
+            <br>
+            <a href="https://github.com/lucasamarale/bootcamp2-chrome-ext-lucasamarale/releases/latest/download/task-manager-v2.0.0.zip" class="button">Download da Última Versão (v2.0.0)</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Projeto desenvolvido por Lucas Amaral para o Bootcamp II.</p>
+    </footer>
+</body>
+</html>
